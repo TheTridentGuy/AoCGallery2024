@@ -46,6 +46,13 @@
         .day-container > *, .flex-row.icon > a {
             padding-right: 1vmin;
         }
+        a {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        a:hover {
+            text-decoration-style: wavy;
+        }
     </style>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
@@ -70,8 +77,8 @@
                 </a>
             </div>
             <div>View Raw:</div>
-            <a href="code/day1.py">day1.py</a>
-            <a href="notes/day1.md">day1.md</a>
+            <a onclick="window.open('code/day1.py')">day1.py</a>
+            <a onclick="window.open('notes/day1.md')">day1.md</a>
         </div>
     </div>
 </body>
