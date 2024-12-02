@@ -1,2 +1,2 @@
-# Notes for day 1
-- `.sort()` modifies in-place
+# Notes for day 2
+im so washed :sob:
