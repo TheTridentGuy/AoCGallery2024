@@ -12,7 +12,7 @@ def p1(i):
     """Part 1"""
     def mul(x,y):
         return x*y
-    finds = re.findall(pattern="mul\(\d+,\d+\)", string=i)
+    finds = re.findall(pattern=r"mul\(\d+,\d+\)", string=i)
     sum = 0
     for f in finds:
         sum += eval(f)
@@ -24,7 +24,7 @@ def p2(i):
     """Part 2"""
     def mul(x,y):
         return x*y
-    finds = re.findall(pattern="mul\(\d+,\d+\)|do\(\)|don't\(\)", string=i)
+    finds = re.findall(pattern=r"mul\(\d+,\d+\)|do\(\)|don't\(\)", string=i)
     sum = 0
     enabled = True
     for f in finds:
