@@ -1,19 +1,19 @@
+import functools
+import itertools
+import collections
 with open("in.txt", "r") as f:
     i = f.read()
-si = """
-
-"""
+si = """"""
 
 # Part 1:
 def p1(i):
     """Part 1"""
 
-
-print(p1(i))
-print("Sample Input:", p1(si))
+print("Sample Input:", p1(p1si := si))
+print(p1i := p1(i))
 def p2(i):
     """Part 2"""
 
 
-print(p2(i))
-print("Sample Input:", p2(si))
+print("Part 2 - Sample Input:", p2si := p2(si))
+print("", p2i := p2(i))
