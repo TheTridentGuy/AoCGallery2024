@@ -1,6 +1,8 @@
 import functools
 import itertools
 import collections
+from pprint import pp, pprint
+import re
 with open("in.txt", "r") as f:
     i = f.read()
 si = """"""
