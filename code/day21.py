@@ -16,7 +16,6 @@ si = """029A
 def p1(i):
     """Part 1"""
     codes = i.split("\n")
-
     def optimize_path(path):
         path = path.split("A")
         optimized_path = []
@@ -34,10 +33,10 @@ def p1(i):
         }
         for index, route in enumerate(path):
             if index % 2 == 0:
-                route = sorted(route, key=lambda x: weights_even[x])
+                route = sorted(route, key=lambda x: weights_odd[x])
                 optimized_path.append("".join(route))
             else:
-                route = sorted(route, key=lambda x: weights_odd[x])
+                route = sorted(route, key=lambda x: weights_even[x])
                 optimized_path.append("".join(route))
         return "A".join(optimized_path)
 
